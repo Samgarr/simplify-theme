@@ -1,5 +1,13 @@
 <!-- task row -->
 <tr class="board-swimlane board-swimlane-tasks-<?= $swimlane['id'] ?>">
+        <?php
+		 //echo "<pre>";var_dump($column['tasks']);echo "</pre>";
+		usort($swimlane['columns'], function($a, $b) {
+		    return $b['id'] <=> $a['id'];
+		});
+	?>
+
+
     <?php foreach ($swimlane['columns'] as $column): ?>
         <?php
 		 //echo "<pre>";var_dump($column['tasks']);echo "</pre>";

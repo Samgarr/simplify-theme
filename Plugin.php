@@ -11,6 +11,7 @@ class Plugin extends Base
         $this->template->setTemplateOverride('board/task_private', 'SimplifyTheme:board/task_private');
         $this->template->setTemplateOverride('board/task_footer', 'SimplifyTheme:board/task_footer');
         $this->template->setTemplateOverride('board/table_tasks', 'SimplifyTheme:board/table_tasks');
+        $this->template->setTemplateOverride('board/table_column', 'SimplifyTheme:board/table_column');
         $this->template->setTemplateOverride('task/show', 'SimplifyTheme:task/show');
         $this->template->setTemplateOverride('task/sidebar', 'SimplifyTheme:task/sidebar');
         $this->template->setTemplateOverride('task/details', 'SimplifyTheme:task/details');
